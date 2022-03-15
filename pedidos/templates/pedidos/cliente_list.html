@@ -6,4 +6,9 @@ Lista de clientes
 
 {% block content %}
 <h1>LISTADO DE CLIENTES</h1>
+<ul>
+    {% for client in object_list %}
+        <li>{{client.nombre_cliente}}</li>
+    {% endfor %}
+</ul>
 {% endblock%}
